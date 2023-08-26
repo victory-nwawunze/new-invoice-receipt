@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment invoice</title>
+
+    <!-- Payment invoice -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap");
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Tiro Devanagari Hindi", serif;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .space {
+      margin-left: 10%;
+    }
+  </style>
+
+  <body>
+    <!-- Coat and QR code -->
+    <div class="container-fluid">
+      <ul
+        class="d-flex justify-content-between align-items-center list-unstyled"
+      >
+        <li>
+          <img src="img/coat-of-arm-removebg-preview.png" style="width: 90px" />
+        </li>
+        <!--  -->
+        <li>
+          <img src="img/QR-code-removebg-preview.png" style="width: 90px" />
+        </li>
+      </ul>
+      <!-- Transactions Details -->
+      <div class="d-flex justify-content-between list-unstyled">
+        <div>
+          <li class="text-sm-start">RRR</li>
+          <li>299009828283</li>
+        </div>
+        <div>
+          <li>Transaction Date</li>
+          <li>01/01/2001 12:00:00</li>
+        </div>
+        <div>
+          <li>Payment Channel</li>
+          <li>Remita</li>
+        </div>
+      </div>
+
+      <!-- Applicant Info -->
+      <div class="d-flex justify-content-between mt-5 h6">
+        <div>
+          <p>Applicant <b>Name</b></p>
+          <p>MTN Group management services(PTY) LTD</p>
+          <p><b>Applicant Address</b></p>
+          <p>34 St louis street, Lekki lagos</p>
+          <p>Class</p>
+        </div>
+        <div>
+          <p>Payment Status: <span style="color: green">Approved</span></p>
+          <p>
+            Payment mode:
+            <span style="text-transform: uppercase">card payment</span>
+          </p>
+          <p class="small">Payment Refrencence:IPO 2292838</p>
+        </div>
+        <!-- -->
+      </div>
+      <!-- Fee description -->
+      <div>
+        <p>Fee description</p>
+        <hr style="border-bottom: 1px solid white; margin-bottom: 10px" />
+        <input type="radio" id="age1" name="age" value="30" />
+        <label for="age1">Registeration OF DESIGN TEXTILE</label><br />
+        <input type="radio" id="age1" name="age" value="30" />
+        <label for="age1">Technology fee</label><br />
+        <hr style="border-bottom: 1px solid white; margin-bottom: 10px" />
+        <p class="text-center text-danger small">
+          Summary of your unsuccessfull Transaction. Your card was not debited
+        </p>
+      </div>
+
+      <div
+        class="bg-success py-3 px-3 text-uppercase text-center text-white my-3"
+      >
+        <p>payment notification</p>
+      </div>
+      <div>
+        <div class="bg-success w-75 py-3 my-5 px-3 text-white text-uppercase">
+          <p>Transaction information</p>
+        </div>
+        <!--  -->
+        <div class="d-flex">
+          <div>
+            <p>Payment Reciept</p>
+            <p>Remita Retreival Refrence (RRR)</p>
+            <p>Payment Channel</p>
+            <p>Transaction Date</p>
+            <p>Payment Status</p>
+          </div>
+          <div class="space">
+            <p>Payment Reciept</p>
+            <p>230393904</p>
+            <p>Remita</p>
+            <p>Unpaid</p>
+            <p>Awaiting paid</p>
+          </div>
+        </div>
+
+        <div class="bg-success w-50 py-3 my-5 px-3 text-white text-uppercase">
+          <p>Payer Information</p>
+        </div>
+        <div class="d-flex list-unstyled">
+          <div>
+            <li>Name</li>
+            <li>Email</li>
+            <li>Phone number</li>
+          </div>
+          <div class="space">
+            <li class="text-sm">MTN Group management service (pty)ltd</li>
+
+            <a href="#">JohnDoe@gmail.com</a>
+            <li>09022266699</li>
+          </div>
+          <div>3</div>
+        </div>
+
+        <div class="bg-success">
+          <p class="text-center">Transaction BreakDown information</p>
+          <!-- On tables -->
+          <table class="table table-responsive-sm table-responsive-lg">
+            <thead class="table-success text-white">
+              <tr>
+                <th scope="col">Payment Date</th>
+                <th scope="col">Refrence NO</th>
+                <th scope="col">Service Description</th>
+                <th scope="col">Amount(NGN)</th>
+                <th scope="col">Tech Fee(NGN)</th>
+                <th scope="col">Total(NGN)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>IP223377637383</td>
+                <td>Registeration Of Patient(Foreign)</td>
+                <td>25,000</td>
+                <td>25,900</td>
+                <td>27,900.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Total invoice -->
+        <p class="text-center text-uppercase">Total invoice amount</p>
+        <p>Please do not reply this mail</p>
+        <p style="margin-top: 8px">Live 24/7 <b>Support</b> (+234)0901556736</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<!---->
